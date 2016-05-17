@@ -13,7 +13,7 @@ if [ "$INTERFACE" == "tun0" ]
 then
     case "$STATUS" in
         up)
-	logger -s "vpn kenzan up triggered"
+	logger -s "fix mtu for cisco anyconnect triggered"
 	sudo ifconfig tun0 mtu 1356
         ;;
         *)
